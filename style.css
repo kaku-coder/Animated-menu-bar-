@@ -1,0 +1,89 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html body{
+    height: 100%;
+    width: 100%;
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.main{
+    width: 100%;
+    height: 100vh;
+    background-color: #0d0024;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.manu, .manu2{
+    width: 200px;
+    height: 200px;
+    margin: 8px;
+    background-image: linear-gradient(to right,#e91e63,#f44336);
+    border-radius: 5px;
+    cursor: pointer;
+}
+.manu div, .manu2 div{
+    width: 120px;
+    height: 120px;
+    margin: 40px;
+    position: absolute;
+}
+.manu span, .manu2 span{
+    background-color: #fff;
+    width: 100%;
+    height: 10px;
+    border-radius: 5px;
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: transform 0.5s, width 0.5s;
+}
+.manu .line-1{
+    transform: translate(-50%,-50px);
+}
+.manu .line-3{
+    transform: translate(-50%,40px);
+    /* bottom: 30px; */
+}
+
+.openmenu .line-1{
+    transform: translate(-50%,-50%) rotate(-45deg);
+}
+.openmenu .line-3{
+    transform: translate(-50%,-50%) rotate(45deg);
+}
+.openmenu .line-2{
+    width: 0;
+}
+
+
+.manu2 .line-1{
+    width: 50%;
+    transform: translate(-100%,-50px);
+    transform-origin: 0 0;
+}
+.manu2 .line-3{
+    width: 50%;
+    transform: translate(0,40px);
+    left: auto;
+    right: 0;
+    transform-origin: 100% 0;
+}
+
+.openmenu2 .line-1{
+    transform: translate(0,0) rotate(-45deg);
+}
+.openmenu2 .line-3{
+    transform: translate(-100%,-0) rotate(-45deg);
+}
+.openmenu2 .line-2{
+    transform: translate(-50%,-50%) rotate(45deg);
+}
